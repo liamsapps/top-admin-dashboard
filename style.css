@@ -113,7 +113,7 @@ h4, h6 {
 .sidebar-1 {    
     background-color: rgb(4, 14, 155);
     background-color: #326fa8;
-    background-color: #327da8;
+    background-color: #327da8;    
     color: white;
     display: flex;
     flex-direction: column;    
@@ -213,7 +213,9 @@ h4, h6 {
 .header input {    
     appearance: none;
     background-color: lightgray;
-    width: 35rem;    
+    /* changed - allows responsiveness */
+    /* width: 35rem;     */
+    width: clamp(20rem, 90%, 40rem);
     height: 1.5rem;
     font-size: 0.8rem;
     letter-spacing: 0.05rem;    
@@ -282,7 +284,8 @@ h4, h6 {
 
 .header > .header-bottom-right {
     display: flex;
-    justify-content: center; 
+    /* justify-content: center;  */
+    justify-content: space-around;
     align-items: center;
     gap: 1.2rem;
 }
@@ -290,11 +293,10 @@ h4, h6 {
 .header > .header-bottom-right > button {
     background-color: #327da8;
     color: white;
-    font-weight: bold;    
+    font-weight: bold;        
     border: none;
     border-radius: 3rem;    
     padding: 0.6rem 2rem;
-
 }
 
 .main > .projects {
